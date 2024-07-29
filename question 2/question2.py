@@ -12,7 +12,7 @@ class FriendNetwork:
 
     def get_friends(self, person):
         return self.network.get(person, [])
-#
+
     def common_friends(self, person1, person2):
         friends1 = set(self.get_friends(person1))
         friends2 = set(self.get_friends(person2))
